@@ -59,3 +59,22 @@ def list_hometown_items():
         hometown_town_items.append(f"{key}: {value}")
     return hometown_town_items
 print("exercise 5:", list_hometown_items())
+
+#exercise 6 list comprehension
+list_of_students = ['Alice', 'Bob', 'Charlie', 'David', 'Ergo']
+def create_awesome_students():
+    awesome_students = [f"{student} is awesome!" for student in list_of_students]
+    return awesome_students
+print("exercise 6:", create_awesome_students())
+
+# Exercise 7: Filter Foods
+#
+# Assign to a variable named foods_with_an_a the result of list comprehension that filters the foods tuple to only include food strings that contain the letter 'a'.
+# For example, if foods is a tuple of ('Taco', 'Burrito', 'Sandwich'), foods_with_an_a would be a list equal to ['Taco', 'Sandwich']
+
+def filter_foods_with_a():
+    foods = ('sushi', 'brioche', 'pate', 'aioli', 'macaroon')
+    foods_with_an_a = [food for food in foods if 'a' in food]
+    return foods_with_an_a  
+
+print('Exercise 7:', filter_foods_with_a())
